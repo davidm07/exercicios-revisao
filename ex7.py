@@ -1,0 +1,11 @@
+primeiro = 0
+segundo = 1
+count = 3
+valor = int(input('Informe o n-ésimo termo de Fibonnaci: '))
+print(f'{primeiro}, {segundo}', end='')
+while count <= valor :
+    proximo = primeiro + segundo
+    print(f', {proximo}', end='')
+    primeiro = segundo
+    segundo = proximo
+    count +=1
